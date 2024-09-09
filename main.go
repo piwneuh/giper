@@ -34,7 +34,7 @@ func main() {
 			color.New(color.FgGreen).Printf("[%s] %s - %s:%s %s\n", entry.LogLevel, entry.DateTime, entry.FileName, entry.LineNumber, entry.LogMessage)
 		case "DEBUG":
 			color.New(color.FgYellow).Printf("[%s] %s - %s:%s %s\n", entry.LogLevel, entry.DateTime, entry.FileName, entry.LineNumber, entry.LogMessage)
-		case "ERROR":
+		case "ERR":
 			color.New(color.FgRed).Printf("[%s] %s - %s:%s %s\n", entry.LogLevel, entry.DateTime, entry.FileName, entry.LineNumber, entry.LogMessage)
 		default:
 			fmt.Printf("[%s] %s - %s:%s %s\n", entry.LogLevel, entry.DateTime, entry.FileName, entry.LineNumber, entry.LogMessage)
